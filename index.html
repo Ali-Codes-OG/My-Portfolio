@@ -1,0 +1,1586 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ghulam ALi - Professional Web Developer</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Orbitron:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Pages/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#sidebar-nav" data-bs-offset="50">
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    <header class="navbar navbar-dark fixed-top py-3 custom-navbar">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-white fs-4" href="#hero"
+          ><span class="text-info blink-name">Ghulam Ali</span></a
+        >
+
+        <a
+          href="#contact"
+          class="btn btn-sm custom-cta-glow d-none d-lg-inline-block me-3"
+          >Get In Touch</a
+        >
+        <button id="theme-toggle" class="btn btn-outline-info ms-lg-3">
+          <i id="theme-icon" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          class="btn btn-outline-light"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNav"
+          aria-controls="offcanvasNav"
+        >
+          <i class="fas fa-bars text-white"></i>
+        </button>
+      </div>
+    </header>
+
+    <div
+      class="offcanvas offcanvas-start bg-dark text-white"
+      tabindex="-1"
+      id="offcanvasNav"
+      aria-labelledby="offcanvasNavLabel"
+      style="border-right: 2px solid #0dcaf0"
+    >
+      <div class="offcanvas-header border-bottom border-secondary pt-4">
+        <h5
+          class="offcanvas-title fw-bold custom-font-orbitron text-info"
+          id="offcanvasNavLabel"
+          style="letter-spacing: 2px"
+        >
+          GHULAM ALI
+        </h5>
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <div class="offcanvas-body">
+        <div class="text-center mb-4 pb-3 border-bottom border-secondary">
+          <div class="profile-img-container mb-3">
+            <img
+              src="My self images/G.Ali 1 (2).png"
+              alt="Ghulam Ali"
+              class="rounded-circle img-thumbnail bg-info p-1"
+              style="
+                width: 120px;
+                height: 120px;
+                object-fit: cover;
+                box-shadow: 0 0 15px rgba(13, 202, 240, 0.5);
+              "
+            />
+          </div>
+          <p class="small text-secondary mb-0">Full-Stack Developer</p>
+          <div class="badge bg-info text-dark mt-2">Available for Hire</div>
+        </div>
+
+        <ul
+          class="navbar-nav justify-content-end flex-grow-1 pe-3 custom-sidebar-links"
+        >
+          <li class="nav-item mb-2">
+            <a
+              class="nav-link text-white active-link"
+              href="#hero"
+              data-bs-dismiss="offcanvas"
+            >
+              <i class="fas fa-home me-2 text-info"></i> Home
+            </a>
+          </li>
+          <li class="nav-item mb-2">
+            <a
+              class="nav-link text-white"
+              href="#about"
+              data-bs-dismiss="offcanvas"
+            >
+              <i class="fas fa-user me-2 text-info"></i> About Me
+            </a>
+          </li>
+          <li class="nav-item mb-2">
+            <a
+              class="nav-link text-white"
+              href="#work"
+              data-bs-dismiss="offcanvas"
+            >
+              <i class="fas fa-code me-2 text-info"></i> Projects
+            </a>
+          </li>
+          <li class="nav-item mb-2">
+            <a
+              class="nav-link text-white"
+              href="#skills"
+              data-bs-dismiss="offcanvas"
+            >
+              <i class="fas fa-lightbulb me-2 text-info"></i> Skills
+            </a>
+          </li>
+          <li class="nav-item mb-2">
+            <a
+              class="nav-link text-white"
+              href="#services"
+              data-bs-dismiss="offcanvas"
+            >
+              <i class="fas fa-concierge-bell me-2 text-info"></i> Services
+            </a>
+          </li>
+          <li class="nav-item mb-4">
+            <a
+              class="nav-link text-white"
+              href="#contact"
+              data-bs-dismiss="offcanvas"
+            >
+              <i class="fas fa-envelope me-2 text-info"></i> Contact
+            </a>
+          </li>
+        </ul>
+
+        <div class="mt-auto pt-4 text-center border-top border-secondary">
+          <div class="d-flex justify-content-center gap-3">
+            <a href="https://github.com/Ali-Codes-OG" class="text-info fs-5"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/mr-boss-90445338b/" class="text-info fs-5"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="text-white">
+      <section
+        id="hero"
+        class="d-flex align-items-center position-relative"
+        style="min-height: 100vh"
+      >
+        <div class="container py-5">
+          <div class="row align-items-center">
+            <div class="col-lg-8 col-md-12 mb-5 mb-lg-0"><br><br><br>
+              <h1 class="display-2 fw-bolder mb-4 custom-font-orbitron">
+                Building High-Performance Digital Experiences.
+              </h1>
+              <p class="lead text-secondary mb-5 fs-5">
+                I am a passionate Web Developer specializing in **Full-Stack
+                solutions**, focusing on responsive design and cutting-edge
+                performance using **PHP, JavaScript, and Bootstrap.**
+              </p>
+              <a href="#work" class="btn btn-lg custom-cta-glow">
+                View Selected Work <i class="fas fa-arrow-right ms-2"></i> </a
+              ><br /><br />
+              <h3>I am a <span id="typewriter" class="text-accent"></span></h3>
+            </div>
+            <div class="col-lg-4 col-md-12 text-center">
+              <img
+                src="My self images/G.Ali 1 (2).png"
+                alt="[Ghulam Ali] - Web Developer"
+                class="img-fluid custom-image-glow-border"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="custom-hr" />
+
+      <section id="about" class="py-5">
+        <div class="container py-5">
+          <h2 class="text-center mb-5 display-5 fw-bolder">
+            My Story: Beyond The Code
+          </h2>
+          <div class="row align-items-center">
+            <div class="col-lg-4 col-md-12 text-center mb-4 mb-lg-0 order-lg-1">
+              <img
+                src="My self images/G.Ali 1 (1).png"
+                alt="Developer Profile"
+                class="img-fluid custom-image-glow-border"
+              />
+            </div>
+            <div class="col-lg-8 col-md-12 order-lg-2">
+              <p class="lead mb-4 text-secondary">
+                My journey began with a small passion for coding, and today it
+                has become a mission to bring innovation to the digital world. I
+                design high-performance, user-friendly, and responsive web
+                applications that work perfectly on every screen size.
+              </p>
+
+              <div class="row row-cols-md-2 g-3 custom-fact-list">
+                <div class="col">
+                  <p class="mb-2">
+                    <strong class="text-info">Name:</strong> Ghulam Ali
+                  </p>
+                </div>
+                <div class="col">
+                  <p class="mb-2">
+                    <strong class="text-info">Role:</strong> Professional Web
+                    Developer
+                  </p>
+                </div>
+                <div class="col">
+                  <p class="mb-2">
+                    <strong class="text-info">Key Skills:</strong> PHP,
+                    JavaScript, JQuery, Database
+                  </p>
+                </div>
+                <div class="col">
+                  <p class="mb-2">
+                    <strong class="text-info">Experience:</strong> 6months+
+                  </p>
+                </div>
+                <div class="col">
+                  <p class="mb-2">
+                    <strong class="text-info">Education:</strong> Matric
+                  </p>
+                </div>
+                <div class="col">
+                  <p class="mb-2">
+                    <strong class="text-info">Location:</strong> Karachi
+                    Pakistan
+                  </p>
+                </div>
+              </div>
+
+              <p class="mt-4 text-secondary">
+                My focus is not just on front-end aesthetics but also on
+                developing **robust back-end systems** and **seamless API
+                integration**. I strive to partner with clients to deliver true
+                digital value.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="custom-hr" />
+
+      <section id="work" class="py-5">
+        <div class="container py-5">
+          <h2 class="text-center mb-5 display-5 fw-bolder">
+            WEb Development & Web Designing
+          </h2>
+          <p class="text-center lead mb-5 text-secondary">
+            Below is a curated collection of my most challenging and rewarding
+            projects, showcasing my end-to-end development skills and CIT
+            expertise.
+          </p>
+
+          <!-- Tabs -->
+          <ul
+            class="nav nav-pills justify-content-center mb-5 custom-tabs"
+            id="pills-tab"
+            role="tablist"
+          >
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-all"
+                type="button"
+              >
+                ALL
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-web"
+                type="button"
+              >
+                WEB
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-app"
+                type="button"
+              >
+                APP
+              </button>
+            </li>
+          </ul>
+
+          <!-- Tab Content -->
+          <div class="tab-content" id="pills-tabContent">
+            <!-- ALL Projects -->
+            <div
+              class="tab-pane fade show active"
+              id="pills-all"
+              role="tabpanel"
+            >
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Web Projects -->
+                <div class="col project-card">
+                  <div class="card h-100 bg-dark-card custom-glow">
+                    <img
+                      src="Portfolio Website images/Web/14 august website img.png"
+                      class="card-img-top"
+                      alt="14 August Landing Page"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-info">
+                        14 August Special Landing Page
+                      </h5>
+                      <p class="card-text text-secondary">
+                        A patriotic and responsive landing page built with HTML,
+                        CSS, and Bootstrap.
+                      </p>
+                    </div>
+
+                    <button
+                      type="button"
+                      class="preview-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#video1"
+                    >
+                      Live Preview
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col project-card">
+                  <div class="card h-100 bg-dark-card custom-glow">
+                    <img
+                      src="Portfolio Website images/Web/Burger website img.png"
+                      class="card-img-top"
+                      alt="Restaurant Burger Website"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-info">
+                        Modern Restaurant Website
+                      </h5>
+                      <p class="card-text text-secondary">
+                        Fully responsive site for a burger joint, showcasing
+                        menu and online ordering features.
+                      </p>
+                    </div>
+                    <button
+                      type="button"
+                      class="preview-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#video2"
+                    >
+                      Live Preview
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col project-card">
+                  <div class="card h-100 bg-dark-card custom-glow">
+                    <img
+                      src="Portfolio Website images/Web/SOS TTI website img.png"
+                      class="card-img-top"
+                      alt="SOS TTI Website"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-info">
+                        SOS Technical Training Institute Site
+                      </h5>
+                      <p class="card-text text-secondary">
+                        Educational institution website focused on clear
+                        information and course details.
+                      </p>
+                    </div>
+                    <button
+                      type="button"
+                      class="preview-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#video3"
+                    >
+                      Live Preview
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col project-card">
+                  <div class="card h-100 bg-dark-card custom-glow">
+                    <img
+                      src="Portfolio Website images/Web/Watches website img.png"
+                      class="card-img-top"
+                      alt="Branded Watches E-Commerce"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-info">
+                        Branded Watches E-Commerce Site
+                      </h5>
+                      <p class="card-text text-secondary">
+                        A sophisticated e-commerce design for luxury and branded
+                        watches.
+                      </p>
+                    </div>
+
+                    <div class="hover-overlay">
+                      <button
+                        type="button"
+                        class="preview-btn"
+                        data-bs-toggle="modal"
+                        data-bs-target="#video4"
+                      >
+                        Live Preview
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- App Projects -->
+                <div class="col project-card">
+                  <div class="card h-100 bg-dark-card custom-glow">
+                    <img
+                      src="Portfolio Website images/APPS/Age Calculator app img.png"
+                      class="card-img-top"
+                      alt="Age Calculator App"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-info">
+                        App Project: Age Calculator
+                      </h5>
+                      <p class="card-text text-secondary">
+                        Simple utility application to calculate age based on
+                        date input.
+                      </p>
+                    </div>
+                    <button
+                      type="button"
+                      class="preview-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#video5"
+                    >
+                      Live Preview
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col project-card">
+                  <div class="card h-100 bg-dark-card custom-glow">
+                    <img
+                      src="Portfolio Website images/APPS/Bulb on off app img.png"
+                      class="card-img-top"
+                      alt="Bulb On/Off App"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-info">
+                        App Project: Bulb On/Off Switch
+                      </h5>
+                      <p class="card-text text-secondary">
+                        Interactive JavaScript app demonstrating DOM
+                        manipulation (Bulb switch).
+                      </p>
+                    </div>
+                    <button
+                      type="button"
+                      class="preview-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#video6"
+                    >
+                      Live Preview
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col project-card">
+                  <div class="card h-100 bg-dark-card custom-glow">
+                    <img
+                      src="Portfolio Website images/APPS/Iphone color changer app img.png"
+                      class="card-img-top"
+                      alt="iPhone Color Changer App"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-info">
+                        App Project: iPhone Color Changer
+                      </h5>
+                      <p class="card-text text-secondary">
+                        A visual front-end app to change the color of an iPhone
+                        display.
+                      </p>
+                    </div>
+                    <button
+                      type="button"
+                      class="preview-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#video7"
+                    >
+                      Live Preview
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col project-card">
+                  <div class="card h-100 bg-dark-card custom-glow">
+                    <img
+                      src="Portfolio Website images/APPS/Luckey draw app img.png"
+                      class="card-img-top"
+                      alt="Lucky Draw App"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-info">
+                        App Project: Lucky Draw Game
+                      </h5>
+                      <p class="card-text text-secondary">
+                        A fun interactive game to pick a random winner (Lucky
+                        Draw).
+                      </p>
+                    </div>
+                    <button
+                      type="button"
+                      class="preview-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#video8"
+                    >
+                      Live Preview
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col project-card">
+                  <div class="card h-100 bg-dark-card custom-glow">
+                    <img
+                      src="Portfolio Website images/APPS/todo list app img.png"
+                      class="card-img-top"
+                      alt="To-Do List App"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-info">
+                        App Project: To-Do List Manager
+                      </h5>
+                      <p class="card-text text-secondary">
+                        Classic To-Do List app using local storage for
+                        persistent task management.
+                      </p>
+                    </div>
+                    <button
+                      type="button"
+                      class="preview-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#video9"
+                    >
+                      Live Preview
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col project-card">
+                  <div class="card h-100 bg-dark-card custom-glow">
+                    <img
+                      src="Portfolio Website images/APPS/Weather app img.png"
+                      class="card-img-top"
+                      alt="Weather App"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-info">
+                        App Project: Real-Time Weather Tracker
+                      </h5>
+                      <p class="card-text text-secondary">
+                        Weather application fetching data using an external API.
+                      </p>
+                    </div>
+                    <button
+                      type="button"
+                      class="preview-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#video10"
+                    >
+                      Live Preview
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col project-card">
+                  <div class="card h-100 bg-dark-card custom-glow">
+                    <img
+                      src="Portfolio Website images/APPS/Quiz app img.png"
+                      class="card-img-top"
+                      alt="Weather App"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-info">
+                        App Project: Real-Time Weather Tracker
+                      </h5>
+                      <p class="card-text text-secondary">
+                        Weather application fetching data using an external API.
+                      </p>
+                    </div>
+                    <button
+                      type="button"
+                      class="preview-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#video14"
+                    >
+                      Live Preview
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col project-card">
+                  <div class="card h-100 bg-dark-card custom-glow">
+                    <img
+                      src="Portfolio Website images/APPS/Smart Calculater app img.png"
+                      class="card-img-top"
+                      alt="Weather App"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-info">
+                        App Project: Smart Calculator
+                      </h5>
+                      <p class="card-text text-secondary">
+                        Smart and fast Calculator
+                      </p>
+                    </div>
+                    <button
+                      type="button"
+                      class="preview-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#video11"
+                    >
+                      Live Preview
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col project-card">
+                  <div class="card h-100 bg-dark-card custom-glow">
+                    <img
+                      src="Portfolio Website images/APPS/Crud Application app img.png"
+                      class="card-img-top"
+                      alt="Weather App"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-info">
+                        App Project: Dashboard Crud Apllication
+                      </h5>
+                      <p class="card-text text-secondary">
+                        Create purpose of store Student data create with PHP.
+                      </p>
+                    </div>
+                    <button
+                      type="button"
+                      class="preview-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#video12"
+                    >
+                      Live Preview
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col project-card">
+                  <div class="card h-100 bg-dark-card custom-glow">
+                    <img
+                      src="Portfolio Website images/APPS/authentication system app img.png"
+                      class="card-img-top"
+                      alt="Weather App"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-info">
+                        App Project:Student Management Systems
+                      </h5>
+                      <p class="card-text text-secondary">
+                        Create purpose of learnings login and logout
+                        functionalitycreate with PHP.
+                      </p>
+                    </div>
+                    <button
+                      type="button"
+                      class="preview-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#video13"
+                    >
+                      Live Preview
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- WEB Projects -->
+            <div class="tab-pane fade" id="pills-web" role="tabpanel">
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Reuse only web projects -->
+                <div class="col project-card">
+                  <div class="card h-100 bg-dark-card custom-glow">
+                    <img
+                      src="Portfolio Website images/Web/14 august website img.png"
+                      class="card-img-top"
+                      alt="14 August Landing Page"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-info">
+                        14 August Special Landing Page
+                      </h5>
+                    </div>
+                    <button
+                      type="button"
+                      class="preview-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#video1"
+                    >
+                      Live Preview
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col project-card">
+                  <div class="card h-100 bg-dark-card custom-glow">
+                    <img
+                      src="Portfolio Website images/Web/Burger website img.png"
+                      class="card-img-top"
+                      alt="Restaurant Burger Website"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-info">
+                        Modern Restaurant Website
+                      </h5>
+                    </div>
+                    <button
+                      type="button"
+                      class="preview-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#video2"
+                    >
+                      Live Preview
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col project-card">
+                  <div class="card h-100 bg-dark-card custom-glow">
+                    <img
+                      src="Portfolio Website images/Web/SOS TTI website img.png"
+                      class="card-img-top"
+                      alt="SOS TTI Website"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-info">
+                        SOS Technical Training Institute Site
+                      </h5>
+                    </div>
+                    <button
+                      type="button"
+                      class="preview-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#video4"
+                    >
+                      Live Preview
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col project-card">
+                  <div class="card h-100 bg-dark-card custom-glow">
+                    <img
+                      src="Portfolio Website images/Web/Watches website img.png"
+                      class="card-img-top"
+                      alt="Branded Watches E-Commerce"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-info">
+                        Branded Watches E-Commerce Site
+                      </h5>
+                    </div>
+                    <button
+                      type="button"
+                      class="preview-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#video3"
+                    >
+                      Live Preview
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- APP Projects -->
+            <div class="tab-pane fade" id="pills-app" role="tabpanel">
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Reuse only app projects -->
+                <div class="col project-card">
+                  <div class="card h-100 bg-dark-card custom-glow">
+                    <img
+                      src="Portfolio Website images/APPS/Age Calculator app img.png"
+                      class="card-img-top"
+                      alt="Age Calculator App"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-info">
+                        App Project: Age Calculator
+                      </h5>
+                    </div>
+                    <button
+                      type="button"
+                      class="preview-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#video5"
+                    >
+                      Live Preview
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col project-card">
+                  <div class="card h-100 bg-dark-card custom-glow">
+                    <img
+                      src="Portfolio Website images/APPS/Bulb on off app img.png"
+                      class="card-img-top"
+                      alt="Bulb On/Off App"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-info">
+                        App Project: Bulb On/Off Switch
+                      </h5>
+                    </div>
+                    <button
+                      type="button"
+                      class="preview-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#video6"
+                    >
+                      Live Preview
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col project-card">
+                  <div class="card h-100 bg-dark-card custom-glow">
+                    <img
+                      src="Portfolio Website images/APPS/Iphone color changer app img.png"
+                      class="card-img-top"
+                      alt="iPhone Color Changer App"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-info">
+                        App Project: iPhone Color Changer
+                      </h5>
+                    </div>
+                    <button
+                      type="button"
+                      class="preview-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#video7"
+                    >
+                      Live Preview
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col project-card">
+                  <div class="card h-100 bg-dark-card custom-glow">
+                    <img
+                      src="Portfolio Website images/APPS/Luckey draw app img.png"
+                      class="card-img-top"
+                      alt="Lucky Draw App"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-info">
+                        App Project: Lucky Draw Game
+                      </h5>
+                    </div>
+                    <button
+                      type="button"
+                      class="preview-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#video8"
+                    >
+                      Live Preview
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col project-card">
+                  <div class="card h-100 bg-dark-card custom-glow">
+                    <img
+                      src="Portfolio Website images/APPS/todo list app img.png"
+                      class="card-img-top"
+                      alt="To-Do List App"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-info">
+                        App Project: To-Do List Manager
+                      </h5>
+                    </div>
+                    <button
+                      type="button"
+                      class="preview-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#video9"
+                    >
+                      Live Preview
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col project-card">
+                  <div class="card h-100 bg-dark-card custom-glow">
+                    <img
+                      src="Portfolio Website images/APPS/Weather app img.png"
+                      class="card-img-top"
+                      alt="Weather App"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-info">
+                        App Project: Real-Time Weather Tracker
+                      </h5>
+                    </div>
+                    <button
+                      type="button"
+                      class="preview-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#video10"
+                    >
+                      Live Preview
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col project-card">
+                  <div class="card h-100 bg-dark-card custom-glow">
+                    <img
+                      src="Portfolio Website images/APPS/Weather app img.png"
+                      class="card-img-top"
+                      alt="Weather App"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-info">
+                        App Project: Quiz App
+                      </h5>
+                      <p class="card-text text-secondary">
+                        Quizz App create with javascript.
+                      </p>
+                    </div>
+                    <button
+                      type="button"
+                      class="preview-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#video10"
+                    >
+                      Live Preview
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col project-card">
+                  <div class="card h-100 bg-dark-card custom-glow">
+                    <img
+                      src="Portfolio Website images/APPS/Smart Calculater app img.png"
+                      class="card-img-top"
+                      alt="Smart Calc"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-info">
+                        App Project: Smart Calculator
+                      </h5>
+                    </div>
+                    <button
+                      type="button"
+                      class="preview-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#video11"
+                    >
+                      Live Preview
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col project-card">
+                  <div class="card h-100 bg-dark-card custom-glow">
+                    <img
+                      src="Portfolio Website images/APPS/Crud Application app img.png"
+                      class="card-img-top"
+                      alt="Dashboard Crud"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-info">
+                        App Project: Dashboard Crud Apllication
+                      </h5>
+                    </div>
+                    <button
+                      type="button"
+                      class="preview-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#video12"
+                    >
+                      Live Preview
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col project-card">
+                  <div class="card h-100 bg-dark-card custom-glow">
+                    <img
+                      src="Portfolio Website images/APPS/authentication system app img.png"
+                      class="card-img-top"
+                      alt="Student Mangement Sysytem"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-info">
+                        App Project:Student Management Systems
+                      </h5>
+                    </div>
+                    <button
+                      type="button"
+                      class="preview-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#video13"
+                    >
+                      Live Preview
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="custom-hr" />
+
+      <section id="skills" class="py-5">
+        <div class="container py-5">
+          <h2 class="text-center mb-5 display-5 fw-bolder">
+            Web development and Web Development task
+          </h2>
+
+          <p class="text-center lead mb-5 text-secondary">
+            My expertise spans the entire web development stack, focusing on
+            speed, responsiveness, and robust back-end functionality.
+          </p>
+
+          <div
+            class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center"
+          >
+            <div class="col">
+              <div class="card skill-logo-card skill-html-css h-100">
+                <i class="fab fa-html5 skill-logo-icon"></i>
+                <h5 class="skill-title text-white">HTML5 / CSS3</h5>
+                <p class="card-text text-secondary small">
+                  Structure & Styling
+                </p>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card skill-logo-card skill-bootstrap h-100">
+                <i class="fab fa-bootstrap skill-logo-icon"></i>
+                <h5 class="skill-title text-white">Bootstrap 5</h5>
+                <p class="card-text text-secondary small">Responsive Design</p>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card skill-logo-card skill-js h-100">
+                <i class="fab fa-js-square skill-logo-icon"></i>
+                <h5 class="skill-title text-white">JavaScript (ES6+)</h5>
+                <p class="card-text text-secondary small">Client-Side Logic</p>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card skill-logo-card skill-jquery h-100">
+                <i class="fas fa-magic skill-logo-icon"></i>
+                <h5 class="skill-title text-white">JQuery & AJAX</h5>
+                <p class="card-text text-secondary small">DOM Manipulation</p>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card skill-logo-card skill-php h-100">
+                <i class="fab fa-php skill-logo-icon"></i>
+                <h5 class="skill-title text-white">PHP</h5>
+                <p class="card-text text-secondary small">
+                  Server-Side Development
+                </p>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card skill-logo-card skill-database h-100">
+                <i class="fas fa-database skill-logo-icon"></i>
+                <h5 class="skill-title text-white">MySQL / Database</h5>
+                <p class="card-text text-secondary small">Data Management</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="custom-hr" />
+
+      <section id="services" class="py-5">
+        <div class="container py-5">
+          <h2 class="text-center mb-5 display-5 fw-bolder">
+            Let's Collaborate: My Offerings
+          </h2>
+          <div class="row align-items-center">
+            <div class="col-lg-8 col-md-12">
+              <p class="lead mb-5 text-secondary">
+                I offer comprehensive web development services tailored to meet
+                your unique needs. My goal is to build robust, scalable, and
+                user-friendly digital solutions that drive results.
+              </p>
+
+              <div class="row row-cols-md-2 g-4">
+                <div class="col-6">
+                  <div
+                    class="p-4 bg-dark-card rounded-3 custom-glow service-card text-center"
+                  >
+                    <i
+                      class="fas fa-laptop-code service-icon mb-3 text-info"
+                    ></i>
+                    <h5 class="text-white">Custom Web Development</h5>
+                    <p class="text-secondary">
+                      Building dynamic and responsive websites from scratch.
+                    </p>
+                  <button
+                      type="button"
+                      class="preview-btn"
+                      data-bs-toggle="moda3"
+                      data-bs-target="#video3"
+                    >
+                      Live Preview
+                    </button>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div
+                    class="p-4 bg-dark-card rounded-3 custom-glow service-card text-center"
+                  >
+                    <i class="fas fa-server service-icon mb-3 text-info"></i>
+                    <h5 class="text-white">Back-End & Database</h5>
+                    <p class="text-secondary">
+                      Developing secure and efficient server-side logic and data
+                      management.
+                    </p>
+                    
+                  <button
+                      type="button"
+                      class="preview-btn"
+                      data-bs-toggle="modal2"
+                      data-bs-target="#video12"
+                    >
+                      Live Preview
+                    </button>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div
+                    class="p-4 bg-dark-card rounded-3 custom-glow service-card text-center"
+                  >
+                    <i class="fas fa-palette service-icon mb-3 text-info"></i>
+                    <h5 class="text-white">Front-End & UI/UX</h5>
+                    <p class="text-secondary">
+                      Crafting intuitive user interfaces and engaging user
+                      experiences.
+                    </p>
+                    
+                  <button
+                      type="button"
+                      class="preview-btn"
+                      data-bs-toggle="moda2"
+                      data-bs-target="#video2"
+                    >
+                      Live Preview
+                    </button>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div
+                    class="p-4 bg-dark-card rounded-3 custom-glow service-card text-center"
+                  >
+                    <i class="fas fa-wrench service-icon mb-3 text-info"></i>
+                    <h5 class="text-white">Maintenance & Support</h5>
+                    <p class="text-secondary">
+                      Providing ongoing support, updates, performance
+                      optimization, and bug fixing.
+                    </p>
+                    
+                  <button
+                      type="button"
+                      class="preview-btn"
+                      disabled
+                      data-bs-toggle="modal"
+                      data-bs-target="#video1"
+                    >
+                      Live Preview
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 text-center mt-5 mt-lg-0">
+              <img
+                src="My self images/G.Ali 1 (3).png"
+                alt="Consultation"
+                class="img-fluid custom-image-glow-border"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="custom-hr" />
+
+      <section id="contact" class="py-5">
+        <div class="container py-5">
+          <h2 class="text-center mb-5 display-5 fw-bolder">Get In Touch</h2>
+          <div class="row justify-content-center">
+            <div class="col-lg-7 mb-4">
+              <form
+                action="https://formspree.io/f/mjgbglkp"
+                method="POST"
+                id="contactForm"
+                class="p-4 bg-dark-card rounded-3 custom-glow"
+              >
+                <div class="mb-3" style="color: whitesmoke;">
+                  <input
+                    type="text"
+                    class="form-control custom-form-control"
+                    name="name"
+                    placeholder="Your Full Name"
+                    required
+                  />
+                </div>
+                <div class="mb-3" style="color: whitesmoke;">
+                  <input
+                    type="email"
+                    class="form-control custom-form-control"
+                    name="email"
+                    placeholder="Your Email Address"
+                    required
+                  />
+                </div>
+                <div class="mb-3" style="color: whitesmoke;">
+                  <input
+                    type="text"
+                    class="form-control custom-form-control"
+                    name="subject"
+                    placeholder="Project Subject"
+                    required
+                  />
+                </div>
+                <div class="mb-3" style="color: whitesmoke;">
+                  <textarea
+                    class="form-control custom-form-control"
+                    name="message"
+                    rows="5"
+                    placeholder="Tell me about your project or inquiry..."
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn custom-cta-glow w-100">
+                  Send Message
+                </button>
+                <div id="form-messages" class="mt-3 text-center"></div>
+              </form>
+            </div>
+            <div class="col-lg-5 ps-lg-5">
+              <h4 class="text-info mt-4 custom-font-orbitron">
+                Direct Contact
+              </h4>
+              <p>
+                Email:
+                <a href="mailto:your_email@gmail.com" class="text-white"
+                  >ghulamali2222222222222email@gmail.com</a
+                >
+              </p>
+              <h4 class="text-info mt-4 custom-font-orbitron">
+                Connect Socially
+              </h4>
+              <div class="d-flex social-links">
+                <a href="https://www.linkedin.com/in/mr-boss-90445338b/" class="me-3 text-white social-icon-glow"
+                  ><i class="fab fa-linkedin fa-2x"></i
+                ></a>
+                <a href="https://github.com/Ali-Codes-OG" class="me-3 text-white social-icon-glow"
+                  ><i class="fab fa-github-square fa-2x"></i
+                ></a>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Modal Web -->
+      <div class="modal fade" id="video1" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark border-info">
+            <div class="modal-header">
+              <h5 class="text-info">14 August Website</h5>
+              <button
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <video width="100%" controls>
+              <source src="Video/Web/Web video 1.mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="video2" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark border-info">
+            <div class="modal-header">
+              <h5 class="text-info">Burger Website</h5>
+              <button
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <video width="100%" controls>
+              <source src="Video/Web/Web video 2.mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="video3" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark border-info">
+            <div class="modal-header">
+              <h5 class="text-info">Watches E-Commerce</h5>
+              <button
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <video width="100%" controls>
+              <source src="Video/Web/Web video 4.mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="video4" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark border-info">
+            <div class="modal-header">
+              <h5 class="text-info">SOS TTI Website</h5>
+              <button
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <video width="100%" controls>
+              <source src="Video/Web/Web app 3.mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Apps -->
+      <div class="modal fade" id="video5" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark border-info">
+            <div class="modal-header">
+              <h5 class="text-info">Age Calculator App</h5>
+              <button
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <video width="100%" controls>
+              <source src="Video/App/Age app 1.mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="video6" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark border-info">
+            <div class="modal-header">
+              <h5 class="text-info">Bulb On Off App</h5>
+              <button
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <video width="100%" controls>
+              <source src="Video/App/Bulb app 2.mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="video7" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark border-info">
+            <div class="modal-header">
+              <h5 class="text-info">iPhone Color Changer</h5>
+              <button
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <video width="100%" controls>
+              <source src="Video/App/Iphone app 3.mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="video8" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark border-info">
+            <div class="modal-header">
+              <h5 class="text-info">Lucky Draw Game</h5>
+              <button
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <video width="100%" controls>
+              <source src="Video/App/Luckey app 4.mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="video9" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark border-info">
+            <div class="modal-header">
+              <h5 class="text-info">To-Do List App</h5>
+              <button
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <video width="100%" controls>
+              <source src="Video/App/ToDo app 5.mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="video10" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark border-info">
+            <div class="modal-header">
+              <h5 class="text-info">Weather App</h5>
+              <button
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <video width="100%" controls>
+              <source src="Video/App/Weather app 6.mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="video11" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark border-info">
+            <div class="modal-header">
+              <h5 class="text-info">Smart Calculator</h5>
+              <button
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <video width="100%" controls>
+              <source src="Video/App/Calc app 8.mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="video12" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark border-info">
+            <div class="modal-header">
+              <h5 class="text-info">Student Management System</h5>
+              <button
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <video width="100%" controls>
+              <source src="Video/App/Authentication app 10.mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="video13" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark border-info">
+            <div class="modal-header">
+              <h5 class="text-info">Crud Application</h5>
+              <button
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <video width="100%" controls>
+              <source src="Video/App/Crud app 9.mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="video14" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content bg-dark border-info">
+            <div class="modal-header">
+              <h5 class="text-info">Quizz App</h5>
+              <button
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <video width="100%" controls>
+              <source src="Video/App/Quiz app 7.mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <button id="backToTop" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+      <footer
+        class="text-center py-3 text-secondary border-top border-secondary opacity-50"
+      >
+        <p class="mb-0">
+      design by G.Ali
+        </p>
+      </footer>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Pages/custom.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // Animation kitni der chale (1 second)
+        once: false, // Kya animation sirf ek baar ho ya har baar scroll karne par
+        offset: 120, // Kitne distance se animation shuru ho
+      });
+    </script>
+  </body>
+</html>
